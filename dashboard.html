@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grofie Delivery Partner</title>
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet">      
+  <!-- Custom styles for this template -->
+  <link href="style_new.css" rel="stylesheet">
+  <script src="jquery_ajax.js"></script>      
+</head>
+<body>
+<!-- Dashboard Start -->
+  <div class="app-admin-wrap layout-sidebar-large clearfix">
+<div class="main-header">
+        <div class="menu-toggle">
+            <div></div>
+                    <div></div>
+            <div></div>
+        </div>
+        <div style="margin: auto"></div>
+        <div class="header-part-right">
+            
+    <!-- User avatar dropdown -->
+    <div class="dropdown">
+        <div class="user col align-self-end">
+            <a href="account.html"><img src="user.jpg" id="userDropdown" alt="User" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+          
+        </div>
+    </div>
+</div>
+</div>
+<!-- header top menu end -->
+<div class="side-content-wrap">
+<div class="sidebar-left rtl-ps-none ps" data-perfect-scrollbar="" data-suppress-scroll-x="true">
+    <ul class="navigation-left">
+        <li class="nav-item">
+            <a class="nav-item-hold" href="https://business-portal-admin.grofie.in/deliveryx/dashboard">
+                <svg class="bi bi-clipboard-data" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">  <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 00-2 2V14a2 2 0 002 2h10a2 2 0 002-2V3.5a2 2 0 00-2-2h-1v1h1a1 1 0 011 1V14a1 1 0 01-1 1H3a1 1 0 01-1-1V3.5a1 1 0 011-1h1v-1z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm-3-1A1.5 1.5 0 005 1.5v1A1.5 1.5 0 006.5 4h3A1.5 1.5 0 0011 2.5v-1A1.5 1.5 0 009.5 0h-3z" clip-rule="evenodd"/><path d="M4 11a1 1 0 112 0v1a1 1 0 11-2 0v-1zm6-4a1 1 0 112 0v5a1 1 0 11-2 0V7zM7 9a1 1 0 012 0v3a1 1 0 11-2 0V9z"/></svg>
+                <span class="nav-text">Dashboard</span>
+                <div class="triangle"></div>
+            </a>
+        </li>        
+        <li class="nav-item">
+            <a href="https://business-portal-admin.grofie.in/deliveryx/all" class="all-delivery nav-item-hold">
+                <svg class="bi bi-card-list" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9a.5.5 0 00-.5-.5zm-13-1A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M5 8a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7A.5.5 0 015 8zm0-2.5a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7a.5.5 0 01-.5-.5zm0 5a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7a.5.5 0 01-.5-.5z" clip-rule="evenodd"/><circle cx="3.5" cy="5.5" r=".5"/><circle cx="3.5" cy="8" r=".5"/><circle cx="3.5" cy="10.5" r=".5"/></svg>
+                <span class="nav-text">All Delivery</span>
+                <div class="triangle"></div>
+            </a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-item-hold" href="https://business-portal-admin.grofie.in/deliveryx/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <svg class="bi bi-power" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.578 4.437a5 5 0 104.922.044l.5-.866a6 6 0 11-5.908-.053l.486.875z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M7.5 8V1h1v7h-1z" clip-rule="evenodd"/></svg>
+                <span class="nav-text">Logout</span>
+            </a>
+            <form id="logout-form" action="https://business-portal-admin.grofie.in/deliveryx/logout" method="POST" style="display: none;">
+                <input type="hidden" name="_token" value="rwOCb1D8VlV5nL84CLuaJaUrrekgFzWelAxRHA0A">            </form>
+            <div class="triangle"></div>
+        </li>
+    </ul>
+<div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+
+
+<!-- Pre Loader Strat  -->
+<div class="loadscreen" id="preloader" style="display: none;">
+    <div class="loader spinner-glow spinner-glow-dark">
+    </div>
+</div>
+<!-- Pre Loader end  -->
+<div class="main-content-wrap d-flex flex-column">
+    <div class="main-content">
+        <h1>Hi, Aniruddha</h1>
+         <div class="separator-breadcrumb border-top"></div>
+        <section class="widget-card">
+            <div class="row">
+                        <!-- Show Assign Orders -->
+                                                        
+                           
+                <div class="orders col-xl-6">
+                    <div class="card mt-4 mb-4">
+                        <div class="card-body">
+                            <div class="d-sm-flex align-item-sm-center flex-sm-nowrap">
+                                <div>
+                                    <h6><a href="#">#1. Aniruddha Sinha</a></h6>
+                                    <p class="ul-task-manager__font-date text-muted">Address: <br>
+                                        Hat Thuba, Barasat, 24 Paraganas North, West Bengal, India<br>
+                                        Ashoknagar<br>
+                                    </p>
+                                    <i class="ul-task-manager__fonts i-Telephone"></i> : 
+                                    <a href="">9093652450/990968</a>
+                                </div>
+                                <ul class="list list-unstyled mb-0 mt-3 mt-sm-0 ml-auto">
+                                    <li><span class="ul-task-manager__font-date text-muted">Order Date : 04-04-2020</span></li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Status: &nbsp;</span>
+                                        <p class="badge badge-warning">On Way</p>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Location: &nbsp;</span>
+                                        22.85723,88.66605
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Distance: &nbsp;</span>
+                                        4.1 km
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Duration: &nbsp;</span>
+                                        13.79 min
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+                   <!--  <span>Due: <span class="font-weight-semibold">18 hours</span></span> -->
+
+                    <button type="button" class="orders-detailsBtn btn btn-outline-dark btn-sm mb-3 float-right" orderid="1586007262" url="https://business-portal-admin.grofie.in/deliveryx/order/details/1586007262" data-name=" " status="2" order-date="04-04-2020">1586007262
+                    </button>
+                    <button class="order-details-spinner-btn btn btn-outline-dark btn-sm mb-3" type="button" disabled="" style="display: none;">
+                        <span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span> 1586007262
+                    </button>
+                        </div>
+                    </div>
+                </div>
+                                                              
+                           
+                <div class="orders col-xl-6">
+                    <div class="card mt-4 mb-4">
+                        <div class="card-body">
+                            <div class="d-sm-flex align-item-sm-center flex-sm-nowrap">
+                                <div>
+                                    <h6><a href="#">#2. Aniruddha Sinha</a></h6>
+                                    <p class="ul-task-manager__font-date text-muted">Address: <br>
+                                        Hat Thuba, Barasat, 24 Paraganas North, West Bengal, India<br>
+                                        Ashoknagar<br>
+                                    </p>
+                                    <i class="ul-task-manager__fonts i-Telephone"></i> : 
+                                    <a href="">9093652450/990968</a>
+                                </div>
+                                <ul class="list list-unstyled mb-0 mt-3 mt-sm-0 ml-auto">
+                                    <li><span class="ul-task-manager__font-date text-muted">Order Date : 04-04-2020</span></li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Status: &nbsp;</span>
+                                        <p class="badge badge-warning">On Way</p>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Location: &nbsp;</span>
+                                        22.85723,88.66605
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Distance: &nbsp;</span>
+                                        4.1 km
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Duration: &nbsp;</span>
+                                        13.79 min
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+                   <!--  <span>Due: <span class="font-weight-semibold">18 hours</span></span> -->
+
+                    <button type="button" class="orders-detailsBtn btn btn-outline-dark btn-sm mb-3 float-right" orderid="1586021646" url="https://business-portal-admin.grofie.in/deliveryx/order/details/1586021646" data-name=" " status="2" order-date="04-04-2020">1586021646
+                    </button>
+                    <button class="order-details-spinner-btn btn btn-outline-dark btn-sm mb-3" type="button" disabled="" style="display: none;">
+                        <span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span> 1586021646
+                    </button>
+                        </div>
+                    </div>
+                </div>
+                                                              
+                           
+                <div class="orders col-xl-6">
+                    <div class="card mt-4 mb-4">
+                        <div class="card-body">
+                            <div class="d-sm-flex align-item-sm-center flex-sm-nowrap">
+                                <div>
+                                    <h6><a href="#">#3. Aniruddha Sinha</a></h6>
+                                    <p class="ul-task-manager__font-date text-muted">Address: <br>
+                                        Hat Thuba, Barasat, 24 Paraganas North, West Bengal, India<br>
+                                        Habra-I<br>
+                                    </p>
+                                    <i class="ul-task-manager__fonts i-Telephone"></i> : 
+                                    <a href="">9093652450/9093034791</a>
+                                </div>
+                                <ul class="list list-unstyled mb-0 mt-3 mt-sm-0 ml-auto">
+                                    <li><span class="ul-task-manager__font-date text-muted">Order Date : 04-04-2020</span></li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Status: &nbsp;</span>
+                                        <p class="badge badge-warning">On Way</p>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Location: &nbsp;</span>
+                                        22.85741,88.66581
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Distance: &nbsp;</span>
+                                        2.28 km
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Duration: &nbsp;</span>
+                                        10.17 min
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+                   <!--  <span>Due: <span class="font-weight-semibold">18 hours</span></span> -->
+
+                    <button type="button" class="orders-detailsBtn btn btn-outline-dark btn-sm mb-3 float-right" orderid="1586021662" url="https://business-portal-admin.grofie.in/deliveryx/order/details/1586021662" data-name=" " status="2" order-date="04-04-2020">1586021662
+                    </button>
+                    <button class="order-details-spinner-btn btn btn-outline-dark btn-sm mb-3" type="button" disabled="" style="display: none;">
+                        <span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span> 1586021662
+                    </button>
+                        </div>
+                    </div>
+                </div>
+                                                
+<div class="orders-details card" style="display: none;">
+    <div class="tab-content">
+        <div class="orderConf">
+            <button class="orderConf-spinner btn btn-warning m-1 float-right" type="button" disabled="" style="display: none;">
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Done
+          </button> 
+        </div>
+        
+              
+        <div class="tab-pane fade show active" id="invoice" role="tabpanel" aria-labelledby="invoice-tab">
+            <div class="d-sm-flex mb-5">                
+                <span class="m-auto"></span>
+            </div>
+            <!---===== Print Area =======-->
+       
+            <div id="print-area">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="font-weight-bold">Order Info</h4>
+                        <p class="text-muted order-id"></p>
+                    </div>
+                    <div class="col-md-6 text-sm-right">
+                        <strong>Order status:</strong>
+                        <p class="status1 badge badge-warning"></p>
+                        <p class="status2 badge badge-light"></p>
+                        <p class="order-date"></p>
+                    </div>
+                </div>
+                <div class="mt-3 mb-4 border-top"></div>
+                <div class="row mb-5">
+                    <div class="col-md-6 mb-3 mb-sm-0">
+                        <h5 class="font-weight-bold">Address: </h5>
+                        <p class="name"></p>
+                        <span style="white-space: pre-line" id="place_name">
+                           
+                        </span>
+                        <p id="phone"></p>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 table-responsive">
+                        <table class="table table-hover mb-3" id="order-details-table">
+                            <thead class="bg-gray-300">
+                                <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Cost</th>
+                                    <th scope="col">Action</th>                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                            
+                            </tbody>
+
+                        </table>
+                        <div class="text-center spiner-details" style="display: none;">
+                            <div class="spinner-border spinner-border-sm" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="invoice-summary">
+                            <p>Sub total: <span class="subtotal"></span> </p>
+                            <p>Delivery Charges on Amount: <span class="deliveryAmount"></span></p>
+                            <p>Delivery Charges on KM: <span class="deliverykm"></span></p>
+                            <h5 class="font-weight-bold">Total: <span class="total"></span></h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--==== / Print Area =====-->
+        </div>
+    </div>
+</div>            </div><!-- row end-->
+</section>
+
+<!--====================================== ORDER DETAILS START ============================================-->
+
+<section class="widget-card">
+            <div class="row">
+                        <!-- Show Assign Orders -->
+                                                        
+                           
+                <div class="orders col-xl-6" style="display: none;">
+                    <div class="card mt-4 mb-4">
+                        <div class="card-body">
+                            <div class="d-sm-flex align-item-sm-center flex-sm-nowrap">
+                                <div>
+                                    <h6><a href="#">#1. Aniruddha Sinha</a></h6>
+                                    <p class="ul-task-manager__font-date text-muted">Address: <br>
+                                        Hat Thuba, Barasat, 24 Paraganas North, West Bengal, India<br>
+                                        Ashoknagar<br>
+                                    </p>
+                                    <i class="ul-task-manager__fonts i-Telephone"></i> : 
+                                    <a href="">9093652450/990968</a>
+                                </div>
+                                <ul class="list list-unstyled mb-0 mt-3 mt-sm-0 ml-auto">
+                                    <li><span class="ul-task-manager__font-date text-muted">Order Date : 04-04-2020</span></li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Status: &nbsp;</span>
+                                        <p class="badge badge-warning">On Way</p>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Location: &nbsp;</span>
+                                        22.85723,88.66605
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Distance: &nbsp;</span>
+                                        4.1 km
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Duration: &nbsp;</span>
+                                        13.79 min
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+                   <!--  <span>Due: <span class="font-weight-semibold">18 hours</span></span> -->
+
+                    <button type="button" class="orders-detailsBtn btn btn-outline-dark btn-sm mb-3 float-right" orderid="1586007262" url="https://business-portal-admin.grofie.in/deliveryx/order/details/1586007262" data-name=" " status="2" order-date="04-04-2020" style="display: none;">1586007262
+                    </button>
+                    <button class="order-details-spinner-btn btn btn-outline-dark btn-sm mb-3" type="button" disabled="" style="display: none;">
+                        <span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span> 1586007262
+                    </button>
+                        </div>
+                    </div>
+                </div>
+                                                              
+                           
+                <div class="orders col-xl-6" style="display: none;">
+                    <div class="card mt-4 mb-4">
+                        <div class="card-body">
+                            <div class="d-sm-flex align-item-sm-center flex-sm-nowrap">
+                                <div>
+                                    <h6><a href="#">#2. Aniruddha Sinha</a></h6>
+                                    <p class="ul-task-manager__font-date text-muted">Address: <br>
+                                        Hat Thuba, Barasat, 24 Paraganas North, West Bengal, India<br>
+                                        Ashoknagar<br>
+                                    </p>
+                                    <i class="ul-task-manager__fonts i-Telephone"></i> : 
+                                    <a href="">9093652450/990968</a>
+                                </div>
+                                <ul class="list list-unstyled mb-0 mt-3 mt-sm-0 ml-auto">
+                                    <li><span class="ul-task-manager__font-date text-muted">Order Date : 04-04-2020</span></li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Status: &nbsp;</span>
+                                        <p class="badge badge-warning">On Way</p>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Location: &nbsp;</span>
+                                        22.85723,88.66605
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Distance: &nbsp;</span>
+                                        4.1 km
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Duration: &nbsp;</span>
+                                        13.79 min
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+                   <!--  <span>Due: <span class="font-weight-semibold">18 hours</span></span> -->
+
+                    <button type="button" class="orders-detailsBtn btn btn-outline-dark btn-sm mb-3 float-right" orderid="1586021646" url="https://business-portal-admin.grofie.in/deliveryx/order/details/1586021646" data-name=" " status="2" order-date="04-04-2020" style="display: none;">1586021646
+                    </button>
+                    <button class="order-details-spinner-btn btn btn-outline-dark btn-sm mb-3" type="button" disabled="" style="display: none;">
+                        <span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span> 1586021646
+                    </button>
+                        </div>
+                    </div>
+                </div>
+                                                              
+                           
+                <div class="orders col-xl-6" style="display: none;">
+                    <div class="card mt-4 mb-4">
+                        <div class="card-body">
+                            <div class="d-sm-flex align-item-sm-center flex-sm-nowrap">
+                                <div>
+                                    <h6><a href="#">#3. Aniruddha Sinha</a></h6>
+                                    <p class="ul-task-manager__font-date text-muted">Address: <br>
+                                        Hat Thuba, Barasat, 24 Paraganas North, West Bengal, India<br>
+                                        Habra-I<br>
+                                    </p>
+                                    <i class="ul-task-manager__fonts i-Telephone"></i> : 
+                                    <a href="">9093652450/9093034791</a>
+                                </div>
+                                <ul class="list list-unstyled mb-0 mt-3 mt-sm-0 ml-auto">
+                                    <li><span class="ul-task-manager__font-date text-muted">Order Date : 04-04-2020</span></li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Status: &nbsp;</span>
+                                        <p class="badge badge-warning">On Way</p>
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Location: &nbsp;</span>
+                                        22.85741,88.66581
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Distance: &nbsp;</span>
+                                        2.28 km
+                                    </li>
+                                    <li class="dropdown">
+                                        <span class="ul-task-manager__font-date text-muted">Duration: &nbsp;</span>
+                                        10.17 min
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+                   <!--  <span>Due: <span class="font-weight-semibold">18 hours</span></span> -->
+
+                    <button type="button" class="orders-detailsBtn btn btn-outline-dark btn-sm mb-3 float-right" orderid="1586021662" url="https://business-portal-admin.grofie.in/deliveryx/order/details/1586021662" data-name=" " status="2" order-date="04-04-2020" style="display: none;">1586021662
+                    </button>
+                    <button class="order-details-spinner-btn btn btn-outline-dark btn-sm mb-3" type="button" disabled="" style="display: none;">
+                        <span class="spinner-border spinner-border-sm text-dark" role="status" aria-hidden="true"></span> 1586021662
+                    </button>
+                        </div>
+                    </div>
+                </div>
+                                                
+<div class="orders-details card" style="">
+    <div class="tab-content">
+        <div class="orderConf">
+            <button class="orderConf-spinner btn btn-warning m-1 float-right" type="button" disabled="" style="display: none;">
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Done
+          </button> 
+         <button type="submit" class="orderConfBtn btn btn-warning m-1 float-right" data-confurl="1586007262">Confirm</button> </div>
+        
+              
+        <div class="tab-pane fade show active" id="invoice" role="tabpanel" aria-labelledby="invoice-tab">
+            <div class="d-sm-flex mb-5">                
+                <span class="m-auto"></span>
+            </div>
+            <!---===== Print Area =======-->
+       
+            <div id="print-area">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="font-weight-bold">Order Info</h4>
+                        <p class="text-muted order-id">1586007262</p>
+                    </div>
+                    <div class="col-md-6 text-sm-right">
+                        <strong>Order status:</strong>
+                        <p class="status1 badge badge-warning">On Way</p>
+                        <p class="status2 badge badge-light"></p>
+                        <p class="order-date"><strong>Order date: </strong>04-04-2020</p>
+                    </div>
+                </div>
+                <div class="mt-3 mb-4 border-top"></div>
+                <div class="row mb-5">
+                    <div class="col-md-6 mb-3 mb-sm-0">
+                        <h5 class="font-weight-bold">Address: </h5>
+                        <p class="name">Aniruddha Sinha</p>
+                        <span style="white-space: pre-line" id="place_name">Hat Thuba, Barasat, 24 Paraganas North, West Bengal, India, Ashoknagar</span>
+                        <p id="phone">9093652450/990968</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 table-responsive">
+                        <table class="table table-hover mb-3" id="order-details-table">
+                            <thead class="bg-gray-300">
+                                <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Cost</th>
+                                    <th scope="col">Action</th>                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                            
+                            <tr class="order3"><th>KOHINOOR RICE</th><td>120</td><td>1</td><td>120</td><td class="rtn"><button type="button" rtn-url="https://business-portal-admin.grofie.in/deliveryx/order/return/1586007262/3" class="rtnBtn btn btn-outline-warning btn-sm">Return</button></td></tr></tbody>
+
+                        </table>
+                        <div class="text-center spiner-details" style="display: none;">
+                            <div class="spinner-border spinner-border-sm" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="invoice-summary">
+                            <p>Sub total: <span class="subtotal">120</span> </p>
+                            <p>Delivery Charges on Amount: <span class="deliveryAmount">15</span></p>
+                            <p>Delivery Charges on KM: <span class="deliverykm">20</span></p>
+                            <h5 class="font-weight-bold">Total: <span class="total">155</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--==== / Print Area =====-->
+        </div>
+    </div>
+</div>            </div><!-- row end-->
+</section>
+<!--====================================== ORDER DETAILS END ============================================-->
+
+
+    </div>
+</div>
+</div>       
+  
+
+
+</div>
+<!-- Dashboard End --> 
+<!-- Bootstrap core JavaScript -->
+  <script src="bootstrap.bundle.min.js"></script>  
+  <script type="text/javascript">
+    
+    $('.menu-toggle').click(function(){
+      $('.sidebar-left').toggleClass( "open" );       
+    });
+  </script>     
+</body>
+</html>
+

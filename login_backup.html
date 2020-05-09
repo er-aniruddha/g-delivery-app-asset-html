@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grofie Delivery Partner</title>
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet">      
+  <!-- Custom styles for this template -->
+  <link href="style_new.css" rel="stylesheet">
+  <script src="jquery_ajax.js"></script>      
+</head>
+<body>
+<!-- Log In Strat -->
+<div class="container-fluid">
+<div class="row log-reg  d-log">
+  <div class="log-img"><img src="d-img.svg" alt=""/></div>
+  <!-- Log In -->
+  <div class="login-pop" id="log">
+  <h5 class="head-title"></h5>
+  <fieldset class="form-group">
+    <input type="number" class="form-control" name="phone" maxlength="10" minlength="10" id="_phone">
+    <label>Enter Mobile number</label>
+    <div style="width: 100%; padding-bottom:.25rem; font-size: .8125rem;color: #e63757;" id="phone-error"></div>
+  </fieldset>
+  <fieldset class="form-group">
+    <button type="submit" class="dlog-btn" id="_loginBtn"><i class="mdi mdi-lock"></i> LOGIN</button>      
+  </fieldset>
+  <fieldset class="form-group">
+    <button class="btn d-loader" type="button" disabled style="display: none;">
+    <span class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span>
+  </button>     
+  </fieldset>  
+  <!-- Bootstrap core JavaScript -->
+  <script src="bootstrap.bundle.min.js"></script> 
+  <script>
+    $('.head-title').text('Log In');
+    $(document).ready(function(){
+      var m_url = 'http://192.168.10.100';   
+      $("#_loginBtn").click(function(){ 
+
+        if(!$("#_phone").val()){
+          $('#phone-error').html("Please enter a number");
+        }
+        else{
+          $('.d-loader').show();
+          $("#_loginBtn").hide();
+          $('#phone-error').html( "" ); 
+        }
+      
+               
+          
+      $.ajax({
+        type:'GET',
+        url: m_url+'/business-portal/api/deliveryx/login/'+$("#_phone").val(),
+    
+        success:function(data) {
+            if(data.errors) {
+              $('#_loginBtn').show();
+              $('.d-loader').hide();
+              if(data.errors.phone){
+              $( '#phone-error' ).html( data.errors.phone[0] );               
+              }                           
+            }
+                  
+          },
+        }); 
+      });
+    });
+  </script>     
+      
+</body>
+</html>
+
